@@ -13,7 +13,7 @@ class PostsController < ApplicationController
 	end
 
 	def create
-    @author = Author.first
+    @author = Author.first #hard coded
 	  @post = Post.create(post_params)
 
     @post.author_id = @author.id
